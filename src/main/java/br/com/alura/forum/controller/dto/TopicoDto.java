@@ -20,6 +20,10 @@ public class TopicoDto {
 		this.dataCriacao = topico.getDataCriacao();
 	}
 	
+	public Long getId() {
+		return id;
+	}
+	
 	public String getTitulo() {
 		return titulo;
 	}
@@ -33,7 +37,5 @@ public class TopicoDto {
 	public static List<TopicoDto> converter(List<Topico> topicos) {
 		return topicos.stream().map(TopicoDto::new).collect(Collectors.toList());
 	}
-	
-	
 
 }
