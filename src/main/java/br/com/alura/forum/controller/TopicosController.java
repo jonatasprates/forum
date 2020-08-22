@@ -88,7 +88,7 @@ public class TopicosController {
 			return ResponseEntity.ok(new TopicoDto(topico));
 		}
 		
-		return ResponseEntity.notFound().build();
+		return ResponseEntity.notFound().build(); 
 	}
 	
 	@DeleteMapping("/{id}")
