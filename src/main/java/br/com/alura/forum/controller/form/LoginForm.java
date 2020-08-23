@@ -20,6 +20,7 @@ public class LoginForm {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+	
 	public UsernamePasswordAuthenticationToken converter() {
 		return new UsernamePasswordAuthenticationToken(email, senha);
 	}
